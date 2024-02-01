@@ -1,0 +1,250 @@
+:root {
+    --text-color: #667085;
+    --text-color2: #8E2424;
+    --text-color3: #101828;
+}
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+}
+
+header {
+    background-color: #667085;
+    width: 100%;
+    font-size: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem 0;
+}
+nav img{
+    width: 100px;
+    height: 99px;
+    border-radius: 2px;
+}
+.links a{
+    color: black;
+    text-decoration: none;
+    margin-right: 2rem;
+}
+.links a:hover{
+    border-bottom: 2px solid var(--text-color3);
+    
+}
+
+.botoes{
+   color: var(--text-color3);
+   align-items: center;
+   text-align: center;
+   text-decoration: none;
+}
+.botao-entrar{
+    margin-right: 1.5rem;
+    cursor: pointer;
+}
+.botao-cadastrar{
+    background-color: var(--text-color3);
+    color: #FFF;
+    font-size: 0.9rem;
+    margin-right: 2.25rem;
+    padding: 0.5rem;
+    border-radius: 8px;
+    border: 1px solid var(--text-color3);
+    cursor: pointer;
+}
+
+/**/
+.container1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.625rem;
+    width: 100%;
+    margin: auto;
+    height: 11.25rem;
+    max-width: 61.25rem;
+}
+.container-metricas{
+    margin: 0.625rem;
+    width: 18%;
+}
+.titulo-metricas{
+    font-size: 60px;
+    color: var(--text-color2);
+    font-style: normal;
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
+}
+.subtitul-metricas{
+    font-weight: 500;
+    font-size: 18px;
+    color: #101828;
+    line-height: 28px;
+}
+.texto-metricas{ 
+    font-size: .86rem;
+    color: #667085;
+}
+/**/
+.container2{
+    background-color: #667085;
+}
+.vagas{
+    font-size: 16px;
+    text-align: center;
+    margin: 20px;
+    color: rgba(122, 2, 2, 0.864);
+}
+.titulo-vagas{
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    margin: 5px;
+}
+.texto-vagas{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans';
+    font-size: 16px;
+    text-align: center;
+    margin: 10px;
+}
+.imagem-capa{
+    align-items: center;
+    text-align: center;
+}
+.imagem-capa img{
+    align-items: center;
+    width: 300px;
+    height: 200px;
+}
+/**/
+.container3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5f5; /* Cor de fundo */
+}
+.area-do-formulario {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+.titulo {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+}
+.texto {
+    font-size: 16px;
+    color: #777;
+}
+.formulario {
+    margin-top: 20px;
+}
+.area {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.btn {
+    background-color: #4285f4;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.label {
+    font-size: 14px;
+    color: #555;
+    margin-top: 10px;
+    display: block;
+}
+.data-de-nascimento {
+    display: flex;
+    gap: 5px;
+}
+.data-info {
+    padding: 10px;
+    width: 33.33%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.genero {
+    display: flex;
+    justify-content: space-between;
+}
+.feminino,
+.masculino {
+    width: 48%;
+}
+.termos {
+    font-size: 12px;
+    color: #777;
+    margin-top: 15px;
+}
+.termos a {
+    color: #4285f4;
+    text-decoration: underline;
+    padding: 5px;
+    
+}
+hr {
+    border: 0;
+    height: 1px;
+    background-color: #ccc;
+    margin: 15px 0;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1.5rem;
+    padding: 6rem 1rem;
+    background: #667085;
+}
+footer h2{
+    color: var(--text-color3);
+}
+::placeholder{
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--text-color3);
+    padding: 4px;
+}
+footer span{
+    color: var(--text-color3);
+}
+footer input{
+    outline: none;
+    border: 1px solid #D0D5DD;
+    border-radius: 8px;
+    padding: 12px 14px 12px 16px;
+    gap: 8px;
+}
+.botao-cadastrar2{
+    background-color: var(--text-color2);
+    color: #FFF;
+    flex-direction: row;
+    border-radius: 8px;
+    border: 1px solid var(--text-color2);
+    cursor: pointer;
+    padding: 12px 20px;
+}
